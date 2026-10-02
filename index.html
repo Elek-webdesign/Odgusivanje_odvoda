@@ -796,8 +796,8 @@
     .footer a { color: #ffffff; text-decoration: none; font-weight: 600; }
     .footer__links { display: flex; gap: 24px; flex-wrap: wrap; }
 
-    /* ---------- Plutajuće Viber dugme ---------- */
-    .float-viber {
+    /* ---------- Plutajuće WhatsApp dugme ---------- */
+    .float-wa {
       position: fixed;
       right: 24px;
       bottom: 24px;
@@ -807,13 +807,20 @@
       width: 64px;
       height: 64px;
       border-radius: 50%;
-      background: #7360f2;
+      background: #25d366;
       color: #ffffff;
       border: 3px solid #ffffff;
-      transition: transform 160ms var(--ease-out);
+      transition: transform 160ms var(--ease-out), background-color 150ms ease;
+      animation: intro-pop 500ms var(--ease-out) 600ms backwards;
     }
-    .float-viber svg { width: 30px; height: 30px; }
-    .float-viber:active { transform: scale(0.94); }
+    @keyframes intro-pop {
+      from { opacity: 0; transform: translateY(12px) scale(0.9); }
+    }
+    .float-wa svg { width: 32px; height: 32px; }
+    .float-wa:active { transform: scale(0.94); }
+    @media (hover: hover) and (pointer: fine) {
+      .float-wa:hover { background: #1ebe5b; }
+    }
 
     /* ---------- Strelica na vrh ---------- */
     .to-top {
@@ -997,7 +1004,13 @@
       .package--featured { padding: 23px 19px; }
       .section-head { margin-bottom: 44px; }
 
-      .float-viber { display: none; }
+      .float-wa {
+        right: 16px;
+        bottom: calc(16px + env(safe-area-inset-bottom));
+        width: 56px;
+        height: 56px;
+      }
+      .float-wa svg { width: 28px; height: 28px; }
       .to-top { bottom: calc(24px + env(safe-area-inset-bottom)); width: 48px; height: 48px; }
     }
 
@@ -1021,7 +1034,8 @@
       .hero__bg { transform: none; transition: none; }
       .btn:active,
       .icon-link:active,
-      .float-viber:active,
+      .float-wa { animation-name: intro-fade; }
+      .float-wa:active,
       .to-top.is-visible:active { transform: none; }
       .to-top { transform: none; }
       .nav { transform: none; }
@@ -1492,9 +1506,9 @@
     </div>
   </footer>
 
-  <!-- Plutajuće Viber dugme (desktop) -->
-  <a class="float-viber" href="viber://chat?number=%2B381611842844" aria-label="Pišite na Viber">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c5.2 0 8.5 2.6 8.5 8.2s-3.3 8.2-8.5 8.2c-.9 0-1.8-.1-2.6-.3L6 21v-3.4c-1.8-1.3-2.5-3.6-2.5-6.9C3.5 5.1 6.8 2.5 12 2.5z"/><path d="M9.2 7.6c.4-.3.9-.2 1.1.2l.7 1.3c.2.4.1.8-.2 1.1l-.4.3c.4 1 1.2 1.8 2.2 2.3l.3-.4c.3-.3.7-.4 1.1-.2l1.3.7c.4.2.5.7.2 1.1-.6.8-1.6 1.1-2.5.7a7.4 7.4 0 0 1-4.3-4.3c-.4-.9-.1-1.9.5-2.8z"/></svg>
+  <!-- Plutajuće WhatsApp dugme -->
+  <a class="float-wa" href="https://wa.me/381611842844" target="_blank" rel="noopener" aria-label="Pišite na WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.3c.3-.4.8-.4 1.1 0l.8 1.4c.2.3.1.7-.1 1l-.5.5c.5 1.1 1.4 2 2.5 2.5l.5-.5c.3-.3.7-.3 1-.1l1.4.8c.4.2.4.8 0 1.1-.7.7-1.7.9-2.6.5a7.6 7.6 0 0 1-4.2-4.2c-.4-.9-.2-1.9.5-2.6z"/></svg>
   </a>
 
   <!-- Strelica na vrh -->
