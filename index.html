@@ -1,0 +1,1777 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odgušenje odvoda Beograd - Ivan Marinković | 061 184 2844</title>
+  <meta name="description" content="Odgušenje sudopere, kade, WC šolje i kanalizacije po celom Beogradu, najbrže na Voždovcu i Zvezdari. Hitne intervencije 0-24h. Ako ne rešim, ne naplaćujem.">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+  <link rel="apple-touch-icon" href="favicon-180.png">
+  <meta name="theme-color" content="#0b1d38">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Boje: narandžasti stil */
+    :root {
+      --top-bg: #f58220;
+      --top-ink: #0b1d38;
+      --dark: #0b1d38;
+      --dark-2: #102849;
+      --dark-line: #24406a;
+      --dark-muted: #a9b8cf;
+      --btn: #f58220;
+      --btn-hover: #e47312;
+      --btn-ink: #10141a;
+      --hi: #f58220;
+      --hi-light: #b45309;
+      --overlay: 11, 29, 56;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --bg-alt: #f3f5f8;
+      --ink: #111a27;
+      --muted: #5a6475;
+      --line: #e1e5eb;
+      --font-head: "Unbounded", system-ui, sans-serif;
+      --font-body: "DM Sans", system-ui, sans-serif;
+      --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+      --blue: #1f63d1;
+      --blue-hover: #1a55b4;
+      --radius: 8px;
+      --pill: 999px;
+      --max: none;
+      --gutter: clamp(20px, 3vw, 48px);
+      --section-y: 112px;
+    }
+
+    /* ---------- Osnova ---------- */
+    *,
+    *::before,
+    *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+
+    h1, h2, h3 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 0;
+      text-wrap: balance;
+    }
+
+    h2 {
+      font-size: clamp(26px, 3.4vw, 42px);
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+    h3 { font-size: 17px; line-height: 1.3; letter-spacing: 0.01em; }
+
+    p { margin: 0; max-width: 65ch; text-wrap: pretty; }
+    a { color: inherit; }
+
+    .wrap {
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    .section { padding: var(--section-y) 0; }
+    .section--alt { background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .section--dark { background: var(--dark); color: #ffffff; }
+
+    .label {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--hi-light);
+      margin-bottom: 16px;
+    }
+    .section--dark .label { color: var(--hi); }
+
+    .section-head { text-align: center; margin: 0 auto 64px; }
+    .section-head p { margin: 20px auto 0; color: var(--muted); }
+    .section--dark .section-head p { color: var(--dark-muted); }
+
+    .skip {
+      position: absolute;
+      left: 16px;
+      top: -48px;
+      background: #ffffff;
+      color: var(--ink);
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      z-index: 100;
+    }
+    .skip:focus { top: 12px; }
+
+    :focus-visible { outline: 2px solid var(--hi); outline-offset: 3px; }
+
+    /* ---------- Dugmad (pill, kao na ARDOK) ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 56px;
+      padding: 0 32px;
+      border-radius: var(--pill);
+      border: 2px solid transparent;
+      font-family: var(--font-head);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      transition:
+        transform 160ms var(--ease-out),
+        background-color 180ms ease,
+        border-color 180ms ease,
+        color 180ms ease;
+    }
+    .btn:active { transform: scale(0.97); }
+    .btn svg { width: 18px; height: 18px; flex: none; }
+
+    .btn--primary { background: var(--btn); color: var(--btn-ink); }
+    .btn--outline { background: transparent; border-color: var(--hi); color: var(--hi); }
+    .btn--outline-dark { background: transparent; border-color: var(--ink); color: var(--ink); }
+
+    @media (hover: hover) and (pointer: fine) {
+      .btn--primary:hover { background: var(--btn-hover); }
+      .btn--outline:hover { background: var(--hi); color: #10141a; }
+      .btn--outline-dark:hover { background: var(--ink); color: #ffffff; }
+    }
+
+    /* ---------- Traka na vrhu ---------- */
+    .topbar {
+      background: var(--top-bg);
+      color: var(--top-ink);
+      text-align: center;
+      font-family: var(--font-head);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 11px 16px;
+    }
+    .topbar a { text-decoration: none; font-weight: 700; }
+
+    /* ---------- Header ---------- */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--dark);
+      color: #ffffff;
+      border-bottom: 1px solid transparent;
+      transition: border-color 200ms ease;
+    }
+    .header.is-scrolled { border-bottom-color: var(--dark-line); }
+
+    .header__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      height: 96px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .brand img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 52%;
+    }
+    .brand__name {
+      font-family: var(--font-head);
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    .brand__name small {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.24em;
+      color: var(--hi);
+      margin-top: 4px;
+    }
+
+    .nav { display: flex; align-items: center; gap: 36px; }
+    .nav a {
+      position: relative;
+      font-family: var(--font-head);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 6px 0;
+      transition: color 150ms ease;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background: var(--hi);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 220ms var(--ease-out);
+    }
+    .nav a.is-active { color: var(--hi); }
+    .nav a.is-active::after { transform: scaleX(1); }
+    @media (hover: hover) and (pointer: fine) {
+      .nav a:hover { color: var(--hi); }
+      .nav a:hover::after { transform: scaleX(1); }
+    }
+
+    .header__icons { display: flex; align-items: center; gap: 18px; }
+    .icon-link {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      color: #ffffff;
+      transition: color 150ms ease, transform 160ms var(--ease-out);
+    }
+    .icon-link svg { width: 26px; height: 26px; }
+    .icon-link--phone { display: none; }
+    .icon-link:active { transform: scale(0.94); }
+    @media (hover: hover) and (pointer: fine) {
+      .icon-link:hover { color: var(--hi); }
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--dark-line);
+      border-radius: var(--radius);
+      background: transparent;
+      color: #ffffff;
+      cursor: pointer;
+      place-items: center;
+    }
+    .menu-toggle svg { width: 22px; height: 22px; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      min-height: calc(100svh - 96px - 38px);
+      display: flex;
+      align-items: flex-end;
+      color: #ffffff;
+      overflow: hidden;
+      background: var(--dark);
+    }
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 8%;
+      transform: scale(1.04);
+      transition: transform 1600ms var(--ease-out);
+    }
+    .hero.is-loaded .hero__bg { transform: scale(1); }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(to bottom, rgba(var(--overlay), 0.45) 0%, rgba(var(--overlay), 0.62) 45%, rgba(var(--overlay), 0.92) 100%);
+    }
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 160px;
+      padding-bottom: 72px;
+    }
+    .hero h1 {
+      font-size: clamp(30px, 5.6vw, 76px);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      line-height: 1.04;
+    }
+    .hero__sub {
+      margin-top: 22px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: clamp(15px, 2.2vw, 30px);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--hi);
+    }
+    .hero__lead {
+      margin: 24px auto 0;
+      max-width: 52ch;
+      font-size: clamp(17px, 1.6vw, 22px);
+      color: #e6ebf3;
+    }
+    .hero__lead b { color: #ffffff; font-weight: 600; }
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 40px;
+    }
+    .hero__actions .btn { min-width: 300px; }
+
+    /* ---------- Traka sa činjenicama ---------- */
+    .facts {
+      background: var(--dark-2);
+      color: #ffffff;
+      border-top: 1px solid var(--dark-line);
+    }
+    .facts__row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .fact {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 28px 24px;
+      font-size: 16px;
+      color: var(--dark-muted);
+      line-height: 1.35;
+    }
+    .fact + .fact { border-left: 1px solid var(--dark-line); }
+    .fact svg { width: 28px; height: 28px; flex: none; color: var(--hi); }
+    .fact b {
+      display: block;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+
+    /* ---------- Garancija ---------- */
+    .guarantee__big {
+      font-size: clamp(30px, 5vw, 64px);
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.05;
+    }
+    .guarantee__big span { color: var(--hi); }
+    .guarantee__text {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+    .guarantee__text b { color: var(--ink); font-weight: 600; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 56px 0 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: step;
+    }
+    .step {
+      padding: 28px 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--bg);
+    }
+    .step::before {
+      counter-increment: step;
+      content: "0" counter(step);
+      display: block;
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 28px;
+      color: var(--hi);
+      margin-bottom: 16px;
+    }
+    .step p { margin-top: 8px; font-size: 16px; color: var(--muted); }
+
+    /* ---------- Usluge ---------- */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .service {
+      padding: 32px 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--bg);
+      transition: border-color 200ms ease;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .service:hover { border-color: var(--hi-light); }
+    }
+    .service svg { width: 36px; height: 36px; color: var(--hi-light); margin-bottom: 24px; }
+    .service p { margin-top: 10px; font-size: 16px; color: var(--muted); }
+    .service__price {
+      display: block;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ---------- Cene ---------- */
+    .prices {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .price-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--dark-line); }
+    .price-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--dark-line);
+    }
+    .price-list .name { flex: 1; }
+    .price-list .name small { display: block; font-size: 15px; color: var(--dark-muted); }
+    .price-list .amount {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 17px;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    .price-list .amount i {
+      font-style: normal;
+      font-family: var(--font-body);
+      font-weight: 400;
+      font-size: 15px;
+      color: var(--dark-muted);
+    }
+    .price-note { margin-top: 28px; font-size: 16px; color: var(--dark-muted); }
+    .price-note b { color: #ffffff; font-weight: 600; }
+
+    .packages { display: grid; gap: 16px; }
+    .package {
+      border: 1px solid var(--dark-line);
+      border-radius: var(--radius);
+      padding: 28px;
+      background: var(--dark-2);
+    }
+    .package--featured { border: 2px solid var(--hi); padding: 27px; }
+    .package__top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .package__label {
+      font-family: var(--font-head);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--hi);
+    }
+    .package__price {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 32px;
+      white-space: nowrap;
+    }
+    .package__price small { font-size: 14px; font-weight: 500; }
+    .package h3 { margin-top: 8px; }
+    .package ul { margin: 16px 0 0; padding: 0; list-style: none; font-size: 16px; color: var(--dark-muted); }
+    .package li { display: flex; gap: 10px; padding: 4px 0; }
+    .package li svg { width: 18px; height: 18px; flex: none; color: var(--hi); margin-top: 4px; }
+    .package .btn { width: 100%; margin-top: 20px; min-height: 48px; }
+
+    /* ---------- Hitne ---------- */
+    .urgent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .urgent img {
+      width: 100%;
+      aspect-ratio: 4 / 3.4;
+      object-fit: cover;
+      object-position: 65% 50%;
+      border-radius: var(--radius);
+    }
+    .urgent__text h2 { margin-top: 0; }
+    .urgent__text > p { margin-top: 20px; color: var(--muted); }
+    .urgent__list { margin: 24px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .urgent__list li {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 17px;
+    }
+    .urgent__list li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-top: 10px;
+      flex: none;
+      background: var(--hi);
+      border-radius: 2px;
+    }
+    .urgent__text .btn { margin-top: 32px; }
+
+    /* ---------- Ko dolazi ---------- */
+    .why {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .placeholder {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 4 / 5;
+      background: #d9dce1;
+      color: #5f6670;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-align: center;
+      padding: 24px;
+    }
+    .why h2 { text-align: left; }
+    .why__items { margin-top: 32px; border-top: 1px solid var(--line); }
+    .why__item {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 18px;
+      padding: 26px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .why__item svg { width: 28px; height: 28px; color: var(--hi-light); margin-top: 2px; }
+    .why__item p { margin-top: 8px; color: var(--muted); font-size: 17px; }
+
+    /* ---------- Područje ---------- */
+    .areas__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .chip {
+      padding: 9px 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--pill);
+      font-size: 16px;
+      background: var(--bg);
+    }
+    .chip--main {
+      border-color: var(--hi);
+      background: var(--hi);
+      color: #10141a;
+      font-weight: 600;
+    }
+    .areas__note { margin: 28px auto 0; text-align: center; font-size: 16px; color: var(--muted); }
+
+    /* ---------- FAQ ---------- */
+    .faq { max-width: 960px; margin: 0 auto; border-top: 1px solid var(--line); }
+    .faq details { border-bottom: 1px solid var(--line); }
+    .faq summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding: 24px 0;
+      cursor: pointer;
+      list-style: none;
+      font-family: var(--font-head);
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary svg {
+      width: 20px;
+      height: 20px;
+      flex: none;
+      color: var(--hi);
+      transition: transform 200ms var(--ease-out);
+    }
+    .faq details[open] summary svg { transform: rotate(45deg); }
+    .faq__a p { padding: 0 0 24px; color: var(--muted); }
+
+
+    /* ---------- Kontakt ---------- */
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .contact h2 { text-align: left; }
+    .contact__phone {
+      display: inline-block;
+      margin-top: 28px;
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(30px, 4vw, 48px);
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 150ms ease;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .contact__phone:hover { color: var(--hi); }
+    }
+    .contact__hours { margin-top: 8px; color: var(--dark-muted); }
+    .contact__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .contact__note { margin-top: 28px; font-size: 16px; color: var(--dark-muted); }
+
+    .form {
+      border-radius: var(--radius);
+      padding: 36px;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    .form h3 { font-size: 20px; text-transform: uppercase; }
+    .form > p { margin-top: 8px; font-size: 16px; color: var(--muted); }
+    .field { margin-top: 20px; }
+    .field label { display: block; font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      font: inherit;
+      font-size: 17px;
+      color: var(--ink);
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      transition: border-color 150ms ease;
+    }
+    .field textarea { min-height: 112px; resize: vertical; }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus { outline: none; border-color: var(--hi-light); }
+    .field input[aria-invalid="true"],
+    .field textarea[aria-invalid="true"] { border-color: #c63b2b; }
+    .field .error { display: none; margin-top: 6px; font-size: 14px; color: #c63b2b; }
+    .field input[aria-invalid="true"] + .error,
+    .field textarea[aria-invalid="true"] + .error { display: block; }
+    .form .btn { width: 100%; margin-top: 24px; }
+    .form__done {
+      display: none;
+      margin-top: 20px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--hi);
+      border-radius: var(--radius);
+      font-size: 16px;
+    }
+    .form__done.is-visible { display: block; }
+    .form > .form__body > p { margin-top: 8px; font-size: 16px; color: var(--muted); }
+    .form .btn:disabled { opacity: 0.7; cursor: progress; }
+
+    /* Poruka posle slanja: krug se iscrta, pa kvačica, pa tekst */
+    .form__success { text-align: center; padding: 24px 0 8px; outline: none; }
+    .form__success[hidden] { display: none; }
+    .success-icon {
+      display: block;
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 24px;
+      color: var(--blue);
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 300ms ease, transform 500ms var(--ease-out);
+    }
+    .success-icon circle {
+      stroke-dasharray: 164;
+      stroke-dashoffset: 164;
+      transform: rotate(-90deg);
+      transform-origin: center;
+      transition: stroke-dashoffset 700ms var(--ease-out);
+    }
+    .success-icon path {
+      stroke-dasharray: 34;
+      stroke-dashoffset: 34;
+      transition: stroke-dashoffset 380ms var(--ease-out) 480ms;
+    }
+    .form__success h3,
+    .form__success p,
+    .form__again {
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out);
+    }
+    .form__success h3 { transition-delay: 600ms; }
+    .form__success p { margin: 10px auto 0; color: var(--muted); font-size: 17px; transition-delay: 680ms; }
+    .form__success .form__success-note { font-size: 15px; transition-delay: 740ms; }
+    .form__success-note a { color: var(--ink); font-weight: 600; }
+    .form__again {
+      margin-top: 24px;
+      padding: 8px 4px;
+      border: 0;
+      background: none;
+      font: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--hi-light);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      cursor: pointer;
+      transition-delay: 800ms;
+    }
+    .form.is-sent .success-icon { opacity: 1; transform: none; }
+    .form.is-sent .success-icon circle,
+    .form.is-sent .success-icon path { stroke-dashoffset: 0; }
+    .form.is-sent .form__success h3,
+    .form.is-sent .form__success p,
+    .form.is-sent .form__again { opacity: 1; transform: none; }
+
+    /* ---------- Footer ---------- */
+    .footer {
+      background: var(--dark-2);
+      color: var(--dark-muted);
+      padding: 48px 0;
+      font-size: 15px;
+      border-top: 1px solid var(--dark-line);
+    }
+    .footer__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+    }
+    .footer a { color: #ffffff; text-decoration: none; font-weight: 600; }
+    .footer__links { display: flex; gap: 24px; flex-wrap: wrap; }
+
+    /* ---------- Plutajuće Viber dugme ---------- */
+    .float-viber {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 55;
+      display: grid;
+      place-items: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #7360f2;
+      color: #ffffff;
+      border: 3px solid #ffffff;
+      transition: transform 160ms var(--ease-out);
+    }
+    .float-viber svg { width: 30px; height: 30px; }
+    .float-viber:active { transform: scale(0.94); }
+
+    /* ---------- Strelica na vrh ---------- */
+    .to-top {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 32px;
+      margin: 0 auto;
+      z-index: 55;
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      border: 0;
+      border-radius: 50%;
+      background: var(--blue);
+      color: #ffffff;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(16px) scale(0.9);
+      /* nestaje brže nego što se pojavljuje */
+      transition:
+        opacity 200ms ease,
+        transform 200ms ease,
+        background-color 150ms ease,
+        visibility 0s linear 200ms;
+    }
+    .to-top svg {
+      width: 24px;
+      height: 24px;
+      transition: transform 240ms var(--ease-out);
+    }
+    .to-top.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      transition:
+        opacity 420ms var(--ease-out),
+        transform 420ms var(--ease-out),
+        background-color 150ms ease;
+    }
+    .to-top.is-visible:active { transform: scale(0.94); transition-duration: 120ms; }
+    @media (hover: hover) and (pointer: fine) {
+      .to-top:hover { background: var(--blue-hover); }
+      .to-top:hover svg { transform: translateY(-2px); }
+    }
+
+
+    /* ---------- Pojavljivanje ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 560ms var(--ease-out), transform 560ms var(--ease-out);
+      transition-delay: calc(var(--i, 0) * 60ms);
+    }
+    .reveal.is-in { opacity: 1; transform: none; }
+
+    /* Slike se otkrivaju odozdo nagore */
+    .reveal--img {
+      opacity: 1;
+      transform: none;
+      overflow: hidden;
+      border-radius: var(--radius);
+      clip-path: inset(0 0 100% 0 round var(--radius));
+      transition: clip-path 1000ms var(--ease-in-out);
+    }
+    .reveal--img.is-in { clip-path: inset(0 0 0 0 round var(--radius)); }
+    .reveal--img img,
+    .reveal--img .placeholder {
+      transform: scale(1.08);
+      transition: transform 1400ms var(--ease-out);
+    }
+    .reveal--img.is-in img,
+    .reveal--img.is-in .placeholder { transform: none; }
+
+    .no-js .reveal { opacity: 1; transform: none; clip-path: none; }
+
+    /* ---------- Učitavanje stranice ---------- */
+    @keyframes intro-down {
+      from { opacity: 0; transform: translateY(-10px); }
+    }
+    @keyframes intro-fade {
+      from { opacity: 0; }
+    }
+    .topbar { animation: intro-fade 500ms ease backwards; }
+    .header__row > * { animation: intro-down 600ms var(--ease-out) backwards; }
+    .header__row > :nth-child(2) { animation-delay: 80ms; }
+    .header__row > :nth-child(3) { animation-delay: 160ms; }
+    .hero__bg { animation: intro-fade 900ms ease backwards; }
+
+    /* ---------- FAQ otvaranje ---------- */
+    .faq__a { overflow: hidden; }
+    .faq summary { transition: color 150ms ease; }
+    .faq details[open] summary { color: var(--hi-light); }
+    .faq details.is-closing summary { color: inherit; }
+    .faq details.is-closing summary svg { transform: none; }
+    @media (hover: hover) and (pointer: fine) {
+      .faq summary:hover { color: var(--hi-light); }
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1080px) {
+      .nav { gap: 22px; }
+      .nav a { font-size: 12px; }
+      .brand__name { font-size: 15px; letter-spacing: 0.16em; }
+    }
+
+    @media (max-width: 1000px) {
+      .services,
+      .steps { grid-template-columns: repeat(2, 1fr); }
+      .facts__row { grid-template-columns: repeat(2, 1fr); }
+      .fact:nth-child(3) { border-left: 0; }
+      .fact:nth-child(n+3) { border-top: 1px solid var(--dark-line); }
+    }
+
+    @media (max-width: 900px) {
+      .menu-toggle { display: grid; }
+      .header__icons .icon-link { display: none; }
+      .header__icons .icon-link--phone { display: grid; width: 44px; height: 44px; border-radius: var(--radius); background: var(--btn); color: var(--btn-ink); }
+      .header__icons .icon-link--phone svg { width: 22px; height: 22px; }
+      .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px var(--gutter) 24px;
+        background: var(--dark);
+        border-bottom: 1px solid var(--dark-line);
+        opacity: 0;
+        transform: translateY(-8px);
+        visibility: hidden;
+        transition: opacity 200ms var(--ease-out), transform 200ms var(--ease-out), visibility 0s linear 200ms;
+      }
+      .nav.is-open {
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+        transition: opacity 200ms var(--ease-out), transform 200ms var(--ease-out);
+      }
+      .nav a { font-size: 14px; padding: 16px 0; border-bottom: 1px solid var(--dark-line); }
+      .nav a::after { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --section-y: 80px; --gutter: 16px; }
+      body { font-size: 16px; }
+      html { scroll-padding-top: 80px; }
+      .topbar { font-size: 10px; letter-spacing: 0.08em; padding: 9px 12px; }
+      .topbar__phone { display: none; }
+      .header__row { height: 72px; }
+      .brand img { width: 44px; height: 44px; }
+      .brand__name { font-size: 13px; letter-spacing: 0.14em; }
+      .brand__name small { font-size: 9px; letter-spacing: 0.16em; }
+
+      .hero { min-height: calc(100svh - 72px - 34px); }
+      .hero__content { padding-top: 120px; padding-bottom: 48px; }
+      .hero__actions .btn { min-width: 0; width: 100%; }
+
+      .facts__row { grid-template-columns: 1fr; }
+      .fact,
+      .fact + .fact { border-left: 0; padding: 18px 0; }
+      .fact + .fact { border-top: 1px solid var(--dark-line); }
+
+      .services,
+      .steps,
+      .guarantee__text { grid-template-columns: 1fr; }
+      .guarantee__text { gap: 16px; }
+      .prices,
+      .urgent,
+      .why,
+      .contact { grid-template-columns: 1fr; gap: 40px; }
+      .placeholder { aspect-ratio: 16 / 10; }
+      .why__item { grid-template-columns: 36px 1fr; gap: 14px; }
+      .form { padding: 24px 20px; }
+      .package { padding: 24px 20px; }
+      .package--featured { padding: 23px 19px; }
+      .section-head { margin-bottom: 44px; }
+
+      .float-viber { display: none; }
+      .to-top { bottom: calc(24px + env(safe-area-inset-bottom)); width: 48px; height: 48px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { transform: none; transition: opacity 300ms ease; }
+      .reveal--img { clip-path: none; opacity: 0; }
+      .reveal--img.is-in { clip-path: none; opacity: 1; }
+      .reveal--img img,
+      .reveal--img .placeholder { transform: none; transition: none; }
+      .header__row > * { animation-name: intro-fade; }
+      .success-icon,
+      .success-icon circle,
+      .success-icon path,
+      .form__success h3,
+      .form__success p,
+      .form__again { transition: opacity 200ms ease; transition-delay: 0ms; transform: none; }
+      .success-icon circle,
+      .success-icon path { stroke-dashoffset: 0; }
+      .success-icon circle { transform: rotate(-90deg); }
+      .hero__bg { transform: none; transition: none; }
+      .btn:active,
+      .icon-link:active,
+      .float-viber:active,
+      .to-top.is-visible:active { transform: none; }
+      .to-top { transform: none; }
+      .nav { transform: none; }
+    }
+  </style>
+</head>
+
+<body class="no-js">
+  <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+
+  <!-- ================= TRAKA NA VRHU ================= -->
+  <div class="topbar">
+    Odgušenje odvoda 0-24h - ceo Beograd<span class="topbar__phone"> - <a href="tel:+381611842844">061 184 2844</a></span>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="wrap header__row">
+      <a class="brand" href="#">
+        <img src="logo.webp" alt="" width="52" height="52">
+        <span class="brand__name">Marinković<small>Odgušenje odvoda</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Glavna navigacija">
+        <a href="#pocetna" class="is-active">Početna</a>
+        <a href="#garancija">Garancija</a>
+        <a href="#usluge">Usluge</a>
+        <a href="#cene">Cene</a>
+        <a href="#pitanja">Pitanja</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="header__icons">
+        <a class="icon-link" href="viber://chat?number=%2B381611842844" aria-label="Viber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c5.2 0 8.5 2.6 8.5 8.2s-3.3 8.2-8.5 8.2c-.9 0-1.8-.1-2.6-.3L6 21v-3.4c-1.8-1.3-2.5-3.6-2.5-6.9C3.5 5.1 6.8 2.5 12 2.5z"/><path d="M9.2 7.6c.4-.3.9-.2 1.1.2l.7 1.3c.2.4.1.8-.2 1.1l-.4.3c.4 1 1.2 1.8 2.2 2.3l.3-.4c.3-.3.7-.4 1.1-.2l1.3.7c.4.2.5.7.2 1.1-.6.8-1.6 1.1-2.5.7a7.4 7.4 0 0 1-4.3-4.3c-.4-.9-.1-1.9.5-2.8z"/></svg>
+        </a>
+        <a class="icon-link" href="https://www.instagram.com/odgusivanje_odvoda/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+        </a>
+        <a class="icon-link icon-link--phone" href="tel:+381611842844" aria-label="Pozovi 061 184 2844">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Meni">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="sadrzaj">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="pocetna">
+      <img class="hero__bg" src="sahta.webp" width="1002" height="747" fetchpriority="high"
+           alt="Ivan Marinković odgušuje kanalizacionu šahtu mašinom sa sajlom">
+      <div class="wrap hero__content">
+        <h1 class="reveal">Odgušenje odvoda<br>i kanalizacije</h1>
+        <p class="hero__sub reveal" style="--i:1">Hitne intervencije 0-24h u Beogradu</p>
+        <p class="hero__lead reveal" style="--i:2">
+          Sudopere, kade, WC šolje i šahte. Najbrže stižem na Voždovac i Zvezdaru.
+          <b>Ako ne rešim, ne naplaćujem.</b>
+        </p>
+        <div class="hero__actions reveal" style="--i:3">
+          <a class="btn btn--primary" href="tel:+381611842844">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            061 184 2844
+          </a>
+          <a class="btn btn--outline" href="viber://chat?number=%2B381611842844">Piši na Viber</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ČINJENICE ================= -->
+    <div class="facts">
+      <div class="wrap facts__row" data-stagger="80">
+        <div class="fact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span><b>0-24h</b>noću, vikendom, praznikom</span>
+        </div>
+        <div class="fact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span><b>Ceo Beograd</b>najbrže Voždovac i Zvezdara</span>
+        </div>
+        <div class="fact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="7" width="14" height="10" rx="1"/><path d="M15 10h4l3 3v4h-7"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          <span><b>Dolazak 0 RSD</b>plaćate samo posao</span>
+        </div>
+        <div class="fact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span><b>Garancija</b>ne rešim, ne naplaćujem</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= GARANCIJA ================= -->
+    <section class="section" id="garancija">
+      <div class="wrap">
+        <span class="label reveal" style="text-align:center">Garancija</span>
+        <h2 class="guarantee__big reveal" style="--i:1">Ako ne rešim,<br><span>ne naplaćujem.</span></h2>
+
+        <div class="guarantee__text reveal" style="--i:2">
+          <p>Pre nego što počnem, kažem vam cenu. Ne menjam je kad završim.</p>
+          <p><b>Ako posle mog rada voda i dalje ne otiče, ne plaćate ništa.</b> Ni rad, ni dolazak. Ne tražim "troškove izlaska".</p>
+        </div>
+
+        <ol class="steps" aria-label="Kako izgleda intervencija">
+          <li class="step reveal">
+            <h3>Pozovete ili pišete</h3>
+            <p>Opišete šta je zapušeno i od kada. Ako možete, pošaljite sliku na Viber.</p>
+          </li>
+          <li class="step reveal" style="--i:1">
+            <h3>Kažem cenu</h3>
+            <p>Još na telefonu dobijete okvirnu cenu i vreme kad stižem.</p>
+          </li>
+          <li class="step reveal" style="--i:2">
+            <h3>Odgušim</h3>
+            <p>Vakumom, sajlom ili vodom pod pritiskom. Zavisi gde je čep i koliko je dubok.</p>
+          </li>
+          <li class="step reveal" style="--i:3">
+            <h3>Pustimo vodu</h3>
+            <p>Plaćate tek kad sami vidite da odvod radi.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= USLUGE ================= -->
+    <section class="section section--alt" id="usluge">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label">Usluge</span>
+          <h2>Šta radim</h2>
+          <p>Uglavnom odvode. Kad sam već kod vas, mogu da zamenim sifon, slavinu ili utičnicu.</p>
+        </div>
+
+        <div class="services">
+          <article class="service reveal">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="12" width="14" height="14" rx="3"/><path d="M18 18h4a4 4 0 0 0 4-4V5"/><path d="M23 5h6"/><path d="M8 12V8h6v4"/></svg>
+            <h3>Vakumiranje</h3>
+            <p>Za lakša zagušenja u sudoperi, lavabou i kadi. Bez rastavljanja.</p>
+            <span class="service__price">od 3.000 RSD</span>
+          </article>
+          <article class="service reveal" style="--i:1">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="16" r="7"/><circle cx="11" cy="16" r="3"/><path d="M18 16h4c2 0 2 3 4 3s2-3 4-3"/></svg>
+            <h3>Mašinsko odgušenje sajlom</h3>
+            <p>Sajla ide kroz cev do vertikale i razbija čep od masnoće, kose i kamenca.</p>
+            <span class="service__price">od 5.000 RSD</span>
+          </article>
+          <article class="service reveal" style="--i:2">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h14v6H4z"/><path d="M18 13h4"/><path d="M25 8l3-2M25 13h4M25 18l3 2"/><path d="M8 16v8M14 16v8"/></svg>
+            <h3>Dubinsko pranje</h3>
+            <p>Voda pod visokim pritiskom ispira naslage sa zidova cevi. Za odvode koji se stalno vraćaju.</p>
+            <span class="service__price">od 7.000 RSD</span>
+          </article>
+          <article class="service reveal" style="--i:3">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="14" rx="2"/><path d="m21 14 8-4v12l-8-4"/><circle cx="12" cy="16" r="3"/></svg>
+            <h3>Snimanje kamerom</h3>
+            <p>Kamera ulazi u cev i vidimo gde je problem: pukotina, koren ili ulegnuće.</p>
+            <span class="service__price">4.000 RSD</span>
+          </article>
+          <article class="service reveal">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h10v8H8z"/><path d="M5 12h20a7 7 0 0 1-7 7h-6a7 7 0 0 1-7-7z"/><path d="M11 19l-1 9h10l-1-9"/></svg>
+            <h3>WC šolja</h3>
+            <p>Odgušenje zapušene šolje i montaža nove.</p>
+            <span class="service__price">4.500 RSD</span>
+          </article>
+          <article class="service reveal" style="--i:1">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4v6M22 4v6"/><path d="M10 10v6a6 6 0 0 0 12 0v-6"/><path d="M16 22v6"/></svg>
+            <h3>Zamena sifona</h3>
+            <p>Sifon koji curi ili je pun naslaga menjam na licu mesta.</p>
+            <span class="service__price">od 1.500 RSD</span>
+          </article>
+          <article class="service reveal" style="--i:2">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14h12a4 4 0 0 1 4 4v2"/><path d="M4 10v8"/><path d="M10 14V9h4v5"/><path d="M20 24v.01M20 28v.01"/></svg>
+            <h3>Zamena slavine</h3>
+            <p>Slavina koja kaplje ili je slabog mlaza. Skinem staru i montiram novu.</p>
+            <span class="service__price">od 1.500 RSD</span>
+          </article>
+          <article class="service reveal" style="--i:3">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="20" height="20" rx="3"/><path d="M13 13v3M19 13v3"/><path d="M13 21h6"/></svg>
+            <h3>Utičnice i prekidači</h3>
+            <p>Sitne zamene, kad je već majstor u kući.</p>
+            <span class="service__price">od 1.000 RSD</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CENE ================= -->
+    <section class="section section--dark" id="cene">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label">Cenovnik za Beograd</span>
+          <h2>Cene, bez iznenađenja</h2>
+          <p>Ovo su početne cene. Tačan iznos kažem pre početka rada, kad vidim odvod.</p>
+        </div>
+
+        <div class="prices">
+          <div>
+            <ul class="price-list" data-stagger="45">
+              <li><span class="name">Vakumiranje<small>lakša zagušenja</small></span><span class="amount"><i>od</i> 3.000 RSD</span></li>
+              <li><span class="name">Odgušenje WC šolje</span><span class="amount">4.500 RSD</span></li>
+              <li><span class="name">Mašinsko odgušenje sajlom<small>do vertikale</small></span><span class="amount"><i>od</i> 5.000 RSD</span></li>
+              <li><span class="name">Dubinsko pranje i ispiranje<small>visoki pritisak</small></span><span class="amount"><i>od</i> 7.000 RSD</span></li>
+              <li><span class="name">Snimanje inspekcijskom kamerom</span><span class="amount">4.000 RSD</span></li>
+              <li><span class="name">Zamena sifona ili slavine</span><span class="amount"><i>od</i> 1.500 RSD</span></li>
+              <li><span class="name">Zamena utičnice ili prekidača</span><span class="amount"><i>od</i> 1.000 RSD</span></li>
+              <li><span class="name">Montaža WC šolje</span><span class="amount"><i>od</i> 2.500 RSD</span></li>
+              <li><span class="name">Hitna intervencija<small>noću, vikendom, praznikom</small></span><span class="amount"><i>od</i> 5.000 RSD</span></li>
+            </ul>
+            <p class="price-note reveal"><b>Dolazak ne naplaćujem.</b> Ako ne odgušim, ne plaćate ni jednu stavku sa ovog spiska.</p>
+          </div>
+
+          <div class="packages">
+            <article class="package reveal" style="--i:1">
+              <div class="package__top">
+                <span class="package__label">Pro paket</span>
+                <span class="package__price">8.000 <small>RSD</small></span>
+              </div>
+              <h3>Odgušenje + snimanje</h3>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Odgušim odvod sajlom</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Snimim cev kamerom i pokažem vam snimak</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Za odvode koji se zapušavaju iz meseca u mesec</li>
+              </ul>
+            </article>
+
+            <article class="package package--featured reveal" style="--i:2">
+              <div class="package__top">
+                <span class="package__label">Hit paket</span>
+                <span class="package__price">11.000 <small>RSD</small></span>
+              </div>
+              <h3>Pranje + sajla + novi sifon</h3>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Sajlom razbijem čep</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Isperem cev vodom pod pritiskom</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Stavim nov sifon umesto starog</li>
+              </ul>
+              <a class="btn btn--primary" href="tel:+381611842844">Zakaži Hit paket</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HITNE ================= -->
+    <section class="section" id="hitne">
+      <div class="wrap urgent">
+        <div class="reveal reveal--img">
+          <img src="kuhinja.webp" width="1448" height="1086" loading="lazy"
+               alt="Odgušenje sudopere u kuhinji mašinom sa sajlom">
+        </div>
+        <div class="urgent__text reveal" style="--i:1">
+          <span class="label">Hitne intervencije 0-24h</span>
+          <h2>Voda se vraća u kadu u dva posle ponoći?</h2>
+          <p>Zovite. Telefon je uključen i noću. Ako sam na drugoj intervenciji, javim se čim završim i kažem kad stižem.</p>
+          <ul class="urgent__list">
+            <li>Voda izlazi iz slivnika u kupatilu</li>
+            <li>WC šolja se puni umesto da ispušta</li>
+            <li>Kanalizacija se vraća u podrum ili šahtu</li>
+            <li>Komšije ispod javljaju da im curi</li>
+          </ul>
+          <a class="btn btn--primary" href="tel:+381611842844">Hitno: 061 184 2844</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KO DOLAZI ================= -->
+    <section class="section section--alt" id="o-meni">
+      <div class="wrap why">
+        <div class="reveal reveal--img">
+          <div class="placeholder">FOTOGRAFIJA: IVAN NA TERENU<br>(portret, uspravno)</div>
+        </div>
+
+        <div>
+          <div class="reveal">
+            <span class="label">Ko dolazi</span>
+            <h2>Na telefon se javljam ja. Kod vas dolazim ja.</h2>
+          </div>
+
+          <div class="why__items">
+            <div class="why__item reveal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div>
+                <h3>Godine rada po beogradskim stanovima</h3>
+                <p>Mnoge zgrade na Voždovcu i Zvezdari imaju stare cevi od livenog gvožđa. U njima se masnoća i kamenac lepe brže, pa vakum često nije dovoljan. Znam kad treba odmah ići sajlom do vertikale.</p>
+              </div>
+            </div>
+            <div class="why__item reveal" style="--i:1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <div>
+                <h3>Objasnim šta radim</h3>
+                <p>Kažem gde je bio čep i od čega. Ako se ponavlja, snimim cev kamerom i pokažem vam snimak, pa sami odlučite da li vredi raditi više.</p>
+              </div>
+            </div>
+            <div class="why__item reveal" style="--i:2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg>
+              <div>
+                <h3>Ostavim čisto</h3>
+                <p>Ispod sifona stavim krpu, prljavu vodu iznesem. Kad odem, kuhinja izgleda kao pre nego što sam došao.</p>
+              </div>
+            </div>
+            <div class="why__item reveal" style="--i:3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              <div>
+                <h3>Prava oprema</h3>
+                <p>Električna mašina sa sajlom, pumpa za visoki pritisak i inspekcijska kamera. Ne dolazim samo sa pumpicom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PODRUČJE ================= -->
+    <section class="section" id="podrucje">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label">Gde radim</span>
+          <h2>Ceo Beograd</h2>
+          <p>Voždovac i Zvezdara su mi najbliži, tamo stižem najbrže. Za ostale delove grada kažem vam tačno vreme kad pozovete.</p>
+        </div>
+        <div class="areas__list" data-stagger="35">
+          <span class="chip chip--main">Voždovac</span>
+          <span class="chip chip--main">Zvezdara</span>
+          <span class="chip">Vračar</span>
+          <span class="chip">Palilula</span>
+          <span class="chip">Stari grad</span>
+          <span class="chip">Savski venac</span>
+          <span class="chip">Čukarica</span>
+          <span class="chip">Rakovica</span>
+          <span class="chip">Novi Beograd</span>
+          <span class="chip">Zemun</span>
+          <span class="chip">Banovo brdo</span>
+          <span class="chip">Mirijevo</span>
+          <span class="chip">Konjarnik</span>
+          <span class="chip">Banjica</span>
+          <span class="chip">Medaković</span>
+          <span class="chip">Karaburma</span>
+          <span class="chip">Kaluđerica</span>
+          <span class="chip">Žarkovo</span>
+        </div>
+        <p class="areas__note">Ne vidite svoj kraj na spisku? Pozovite, verovatno dolazim i tamo.</p>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section section--alt" id="pitanja">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label">Pitanja</span>
+          <h2>Šta me ljudi najčešće pitaju</h2>
+        </div>
+
+        <div class="faq" data-stagger="70">
+          <details>
+            <summary>Šta ako ne uspete da odgušite?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__a"><p>Onda ne plaćate ništa. Ni rad ni dolazak. Kažem vam šta sam video u cevi i šta mislim da je sledeći korak.</p></div>
+          </details>
+          <details>
+            <summary>Da li naplaćujete dolazak?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__a"><p>Ne. Plaćate samo posao, i to tek kad vidite da voda otiče.</p></div>
+          </details>
+          <details>
+            <summary>Koliko brzo stižete?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__a"><p>Zavisi od dela grada i od toga da li sam na drugoj intervenciji. Na Voždovac i Zvezdaru stižem najbrže. Kad pozovete, kažem vam tačno vreme, ne "uskoro".</p></div>
+          </details>
+          <details>
+            <summary>Sipao sam hemiju za odvod. Da li je to problem?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__a"><p>Recite mi pre nego što počnem. Hemija iz prodavnice rastvori masnoću pri vrhu, a čep obično ostane dublje u cevi. Tečnost koja stoji u sifonu može da nagrize kožu, pa radim drugačije.</p></div>
+          </details>
+          <details>
+            <summary>Radite li noću i vikendom?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__a"><p>Da, svaki dan i svaku noć, i za praznike. Hitna intervencija van radnog vremena počinje od 5.000 RSD.</p></div>
+          </details>
+          <details>
+            <summary>Radite li za stambene zajednice?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__a"><p>Da. Zapušena vertikala ili šahta u dvorištu zgrade su čest posao. Upravnik može da me pozove direktno.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KONTAKT ================= -->
+    <section class="section section--dark" id="kontakt">
+      <div class="wrap contact">
+        <div class="reveal">
+          <span class="label">Kontakt</span>
+          <h2>Najbrže je da pozovete.</h2>
+          <a class="contact__phone" href="tel:+381611842844">061 184 2844</a>
+          <p class="contact__hours">Svaki dan, 0-24h. Ceo Beograd.</p>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="tel:+381611842844">Pozovi</a>
+            <a class="btn btn--outline" href="viber://chat?number=%2B381611842844">Viber poruka</a>
+          </div>
+
+          <p class="contact__note">Na Viber možete poslati i sliku odvoda. Često po slici mogu da vam kažem cenu pre nego što krenem.</p>
+        </div>
+
+        <form class="form reveal" id="upit" style="--i:1" novalidate>
+          <div class="form__body">
+          <h3>Pošaljite upit</h3>
+          <p>Ostavite broj i javićemo vam se čim pročitamo.</p>
+
+          <div class="field">
+            <label for="f-ime">Ime</label>
+            <input id="f-ime" name="ime" type="text" autocomplete="name" required>
+            <span class="error">Upišite ime.</span>
+          </div>
+          <div class="field">
+            <label for="f-tel">Broj telefona</label>
+            <input id="f-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel" placeholder="06x xxx xxxx" required>
+            <span class="error">Upišite broj na koji mogu da vas pozovem.</span>
+          </div>
+          <div class="field">
+            <label for="f-opstina">Deo grada</label>
+            <select id="f-opstina" name="opstina">
+              <option>Voždovac</option>
+              <option>Zvezdara</option>
+              <option>Vračar</option>
+              <option>Palilula</option>
+              <option>Stari grad</option>
+              <option>Savski venac</option>
+              <option>Čukarica</option>
+              <option>Rakovica</option>
+              <option>Novi Beograd</option>
+              <option>Zemun</option>
+              <option>Drugo</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-opis">Šta je zapušeno?</label>
+            <textarea id="f-opis" name="opis" placeholder="Npr. sudopera u kuhinji, voda stoji od jutros" required></textarea>
+            <span class="error">Napišite ukratko šta se desilo.</span>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Pošalji upit</button>
+          <div class="form__done" id="form-done" role="alert"></div>
+          </div>
+
+          <div class="form__success" id="form-success" tabindex="-1" hidden>
+            <svg class="success-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="28" cy="28" r="26"/>
+              <path d="M17 29l7.5 7.5L40 21"/>
+            </svg>
+            <h3>Upit je poslat</h3>
+            <p>Javićemo vam se u što kraćem periodu.</p>
+            <p class="form__success-note">Ako je hitno, pozovite <a href="tel:+381611842844">061 184 2844</a>.</p>
+            <button class="form__again" type="button">Pošalji novi upit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap footer__row">
+      <div>Ivan Marinković - odgušenje odvoda, Beograd. Hitne intervencije 0-24h.</div>
+      <div class="footer__links">
+        <a href="tel:+381611842844">061 184 2844</a>
+        <a href="viber://chat?number=%2B381611842844">Viber</a>
+        <a href="https://www.instagram.com/odgusivanje_odvoda/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Plutajuće Viber dugme (desktop) -->
+  <a class="float-viber" href="viber://chat?number=%2B381611842844" aria-label="Pišite na Viber">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c5.2 0 8.5 2.6 8.5 8.2s-3.3 8.2-8.5 8.2c-.9 0-1.8-.1-2.6-.3L6 21v-3.4c-1.8-1.3-2.5-3.6-2.5-6.9C3.5 5.1 6.8 2.5 12 2.5z"/><path d="M9.2 7.6c.4-.3.9-.2 1.1.2l.7 1.3c.2.4.1.8-.2 1.1l-.4.3c.4 1 1.2 1.8 2.2 2.3l.3-.4c.3-.3.7-.4 1.1-.2l1.3.7c.4.2.5.7.2 1.1-.6.8-1.6 1.1-2.5.7a7.4 7.4 0 0 1-4.3-4.3c-.4-.9-.1-1.9.5-2.8z"/></svg>
+  </a>
+
+  <!-- Strelica na vrh -->
+  <button class="to-top" type="button" aria-label="Nazad na vrh">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script>
+    (function () {
+      document.body.classList.remove('no-js');
+
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ---- Blago skrolovanje (strelica na vrh i linkovi u meniju) ----
+         Sopstvena animacija umesto CSS smooth, da bi kretanje bilo
+         mekše i trajalo srazmerno dužini puta. */
+      document.documentElement.style.scrollBehavior = 'auto';
+      var scrollFrame = null;
+
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      function stopScroll() {
+        if (scrollFrame) cancelAnimationFrame(scrollFrame);
+        scrollFrame = null;
+      }
+
+      function smoothScrollTo(targetY, done) {
+        stopScroll();
+        var startY = window.scrollY;
+        var distance = targetY - startY;
+        if (reduceMotion || Math.abs(distance) < 2) {
+          window.scrollTo(0, targetY);
+          if (done) done();
+          return;
+        }
+        var duration = Math.min(1200, Math.max(500, Math.abs(distance) * 0.3));
+        var start = null;
+        function step(now) {
+          if (start === null) start = now;
+          var t = Math.min(1, (now - start) / duration);
+          window.scrollTo(0, startY + distance * easeInOutCubic(t));
+          if (t < 1) {
+            scrollFrame = requestAnimationFrame(step);
+          } else {
+            scrollFrame = null;
+            if (done) done();
+          }
+        }
+        scrollFrame = requestAnimationFrame(step);
+      }
+
+      // Ako korisnik sam skroluje usred animacije, puštamo ga
+      ['wheel', 'touchstart', 'keydown'].forEach(function (type) {
+        window.addEventListener(type, stopScroll, { passive: true });
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          var id = link.getAttribute('href');
+          var target = id === '#' ? null : document.querySelector(id);
+          if (id !== '#' && !target) return;
+          e.preventDefault();
+          var offset = document.getElementById('header').offsetHeight;
+          var y = target ? target.getBoundingClientRect().top + window.scrollY - offset + 1 : 0;
+          smoothScrollTo(Math.max(0, y), function () {
+            if (target) {
+              target.setAttribute('tabindex', '-1');
+              target.focus({ preventScroll: true });
+            }
+          });
+          if (history.replaceState) history.replaceState(null, '', id === '#' ? location.pathname : id);
+        });
+      });
+
+      /* ---- Hero: lagani zoom-out slike kad se učita ---- */
+      var hero = document.querySelector('.hero');
+      var heroImg = document.querySelector('.hero__bg');
+      function heroReady() { requestAnimationFrame(function () { hero.classList.add('is-loaded'); }); }
+      if (heroImg.complete) heroReady(); else heroImg.addEventListener('load', heroReady);
+
+      /* ---- Header linija i aktivni link ---- */
+      var header = document.getElementById('header');
+      var toTop = document.querySelector('.to-top');
+      function onScroll() {
+        header.classList.toggle('is-scrolled', window.scrollY > 8);
+        toTop.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.8);
+      }
+      toTop.addEventListener('click', function () {
+        smoothScrollTo(0, function () {
+          document.querySelector('.brand').focus({ preventScroll: true });
+        });
+      });
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      var navLinks = document.querySelectorAll('.nav a');
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach(function (a) {
+              a.classList.toggle('is-active', a.getAttribute('href') === '#' + entry.target.id);
+            });
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        navLinks.forEach(function (a) {
+          var target = document.querySelector(a.getAttribute('href'));
+          if (target) spy.observe(target);
+        });
+      }
+
+      /* ---- Mobilni meni ---- */
+      var nav = document.getElementById('nav');
+      var toggle = document.querySelector('.menu-toggle');
+      function setMenu(open) {
+        nav.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+      }
+      toggle.addEventListener('click', function () { setMenu(!nav.classList.contains('is-open')); });
+      navLinks.forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+      /* ---- Stagger: deca kontejnera se pojavljuju jedno za drugim ---- */
+      document.querySelectorAll('[data-stagger]').forEach(function (group) {
+        var gap = parseInt(group.getAttribute('data-stagger'), 10) || 60;
+        Array.prototype.forEach.call(group.children, function (child, i) {
+          child.classList.add('reveal');
+          child.style.transitionDelay = Math.min(i * gap, 700) + 'ms';
+        });
+      });
+
+      /* ---- FAQ: blago otvaranje i zatvaranje u svim browserima ---- */
+      document.querySelectorAll('.faq details').forEach(function (details) {
+        var summary = details.querySelector('summary');
+        var body = details.querySelector('.faq__a');
+        var anim = null;
+
+        summary.addEventListener('click', function (e) {
+          e.preventDefault();
+          if (reduceMotion) { details.open = !details.open; return; }
+
+          var opening = !details.open || details.classList.contains('is-closing');
+          var from = body.getBoundingClientRect().height;
+          if (anim) anim.cancel();
+
+          if (opening) {
+            details.classList.remove('is-closing');
+            details.open = true;
+            var to = body.scrollHeight;
+            anim = body.animate(
+              [{ height: from + 'px', opacity: from ? 1 : 0 }, { height: to + 'px', opacity: 1 }],
+              { duration: 320, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' }
+            );
+          } else {
+            details.classList.add('is-closing');
+            anim = body.animate(
+              [{ height: from + 'px', opacity: 1 }, { height: '0px', opacity: 0 }],
+              { duration: 220, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' }
+            );
+          }
+
+          anim.onfinish = function () {
+            if (!opening) details.open = false;
+            details.classList.remove('is-closing');
+            anim = null;
+          };
+        });
+      });
+
+      /* ---- Pojavljivanje sekcija, jednom ---- */
+      var items = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -80px 0px' });
+        items.forEach(function (el) { io.observe(el); });
+      } else {
+        items.forEach(function (el) { el.classList.add('is-in'); });
+      }
+
+      /* ---- Forma za upit ----
+         VAŽNO pre objave: upišite FORM_ENDPOINT (npr. Formspree adresu),
+         inače upit nigde ne stiže, a posetilac ipak vidi "Upit je poslat". */
+      var FORM_ENDPOINT = '';
+      var form = document.getElementById('upit');
+      var done = document.getElementById('form-done');
+      var formBody = form.querySelector('.form__body');
+      var success = document.getElementById('form-success');
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var EASE = 'cubic-bezier(0.23, 1, 0.32, 1)';
+
+      // Zamena sadržaja forme uz blagu promenu visine
+      function swapFormContent(hide, show, after) {
+        function swap() {
+          var startH = form.offsetHeight;
+          hide.hidden = true;
+          show.hidden = false;
+          var endH = form.offsetHeight;
+          if (!reduceMotion) {
+            form.style.overflow = 'hidden';
+            form.animate(
+              [{ height: startH + 'px' }, { height: endH + 'px' }],
+              { duration: 420, easing: EASE }
+            ).onfinish = function () { form.style.overflow = ''; };
+          }
+          if (after) requestAnimationFrame(function () { requestAnimationFrame(after); });
+        }
+        if (reduceMotion) { swap(); return; }
+        hide.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180, easing: 'ease' }).onfinish = swap;
+      }
+
+      function showSuccess() {
+        swapFormContent(formBody, success, function () {
+          form.classList.add('is-sent');
+          success.focus({ preventScroll: true });
+          var top = form.getBoundingClientRect().top;
+          if (top < 80 || top > window.innerHeight * 0.6) {
+            smoothScrollTo(form.getBoundingClientRect().top + window.scrollY - document.getElementById('header').offsetHeight - 24);
+          }
+        });
+      }
+
+      form.querySelector('.form__again').addEventListener('click', function () {
+        form.reset();
+        form.classList.remove('is-sent');
+        done.classList.remove('is-visible');
+        swapFormContent(success, formBody, function () {
+          document.getElementById('f-ime').focus({ preventScroll: true });
+        });
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var firstInvalid = null;
+        form.querySelectorAll('[required]').forEach(function (field) {
+          var bad = !field.value.trim();
+          field.setAttribute('aria-invalid', String(bad));
+          if (bad && !firstInvalid) firstInvalid = field;
+        });
+        if (firstInvalid) { firstInvalid.focus(); return; }
+
+        done.classList.remove('is-visible');
+
+        if (!FORM_ENDPOINT) {
+          console.warn('FORM_ENDPOINT nije podešen: upit nije poslat nigde (demo prikaz).');
+          showSuccess();
+          return;
+        }
+
+        var label = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Šaljem...';
+
+        fetch(FORM_ENDPOINT, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+          .then(function (r) {
+            if (!r.ok) throw new Error();
+            showSuccess();
+          })
+          .catch(function () {
+            done.textContent = 'Upit nije otišao. Pokušajte ponovo ili pozovite 061 184 2844.';
+            done.classList.add('is-visible');
+          })
+          .then(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = label;
+          });
+      });
+
+      form.addEventListener('input', function (e) {
+        if (e.target.getAttribute('aria-invalid') === 'true' && e.target.value.trim()) {
+          e.target.setAttribute('aria-invalid', 'false');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
