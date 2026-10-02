@@ -8,7 +8,7 @@ Svi fajlovi su u jednom folderu, bez podfoldera. Tako ih GitHub prima u jednom p
 
 1. Raspakujte `odgusenje-odvoda.zip`.
 2. Na GitHub-u otvorite repozitorijum i kliknite **Add file**, pa **Upload files**.
-3. Uđite u raspakovani folder, označite **sve fajlove** (Ctrl+A) i prevucite ih u prozor GitHub-a. Treba da ih bude 9, zajedno sa ovim README fajlom i fajlom `.nojekyll`.
+3. Uđite u raspakovani folder, označite **sve fajlove** (Ctrl+A) i prevucite ih u prozor GitHub-a. Treba da ih bude 12, zajedno sa ovim README fajlom i fajlom `.nojekyll`.
 4. Kliknite **Commit changes**.
 5. Otvorite Settings, pa Pages. Source: **Deploy from a branch**, Branch: **main**, folder **/ (root)**, pa Save.
 6. Posle minut-dva sajt radi na `https://<korisnik>.github.io/<repozitorijum>/`.
@@ -32,6 +32,6 @@ Da bi upiti stizali na mejl:
 | `index.html` | ceo sajt: tekst, stil i skripta |
 | `sahta.webp` | pozadina na početku stranice |
 | `kuhinja.webp` | slika u delu o hitnim intervencijama |
-| `logo.webp` | logo u zaglavlju |
-| `favicon-32.png`, `favicon-64.png` | ikonica u tabu browsera |
-| `favicon-180.png` | ikonica kad se sajt doda na početni ekran telefona |
+| `logo-52.png`, `logo-104.png`, `logo-156.png` | logo u zaglavlju, bez pozadine (browser bira oštrinu prema ekranu) |
+| `favicon-32.png`, `favicon-64.png`, `favicon-192.png` | ikonica u tabu browsera, bez pozadine |
+| `favicon-180.png` | ikonica kad se sajt doda na početni ekran iPhone-a (sa belom pozadinom, jer iPhone providno pretvara u crno) |

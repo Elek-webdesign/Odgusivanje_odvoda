@@ -1,12 +1,16 @@
 <!doctype html>
-<html lang="sr-Latn">
+<html lang="sr" translate="no">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Jezik je srpski: Google ne nudi prevod (ranije ga je prepoznavao kao bosanski) -->
+  <meta http-equiv="content-language" content="sr">
+  <meta name="google" content="notranslate">
   <title>Odgušenje odvoda Beograd - Ivan Marinković | 061 184 2844</title>
   <meta name="description" content="Odgušenje sudopere, kade, WC šolje i kanalizacije po celom Beogradu, najbrže na Voždovcu i Zvezdari. Hitne intervencije 0-24h. Ako ne rešim, ne naplaćujem.">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
   <link rel="apple-touch-icon" href="favicon-180.png">
   <meta name="theme-color" content="#0b1d38">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -208,9 +212,7 @@
     .brand img {
       width: 52px;
       height: 52px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: 50% 52%;
+      flex: none;
     }
     .brand__name {
       font-family: var(--font-head);
@@ -1039,7 +1041,9 @@
   <header class="header" id="header">
     <div class="wrap header__row">
       <a class="brand" href="#">
-        <img src="logo.webp" alt="" width="52" height="52">
+        <img src="logo-52.png"
+             srcset="logo-52.png 1x, logo-104.png 2x, logo-156.png 3x"
+             alt="" width="52" height="52">
         <span class="brand__name">Marinković<small>Odgušenje odvoda</small></span>
       </a>
 
